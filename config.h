@@ -67,27 +67,44 @@ static char termname[] = "st-256color";
 
 static unsigned int tabspaces = 8;
 
+/*
+!URxvt*cursorUnderline:  true
+URxvt*cursorColor:  #ffbf00
+
+!Theme
+urxvt*background:    rgb:10/10/10
+urxvt*foreground:    rgb:ff/ff/ff
+!black
+!red
+!green
+!yellow
+!blue
+!magenta
+!cyan
+!white
+*/
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#101010", // black
+	"#bf1e2d", // red
+	"#9dba3a", // green
+	"#f6b915", // yellow
+	"#1ca1db", // blue
+	"#652f90", // magenta
+	"#ea7d24", // "cyan" (orange)
+	"#ffffff", // white
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#666666", // black
+	"#e7217a", // red
+	"#a9c938", // green
+	"#f7d325", // yellow
+	"#00afda", // blue
+	"#894e9f", // magenta
+	"#f79321", // "cyan" (orange)
+	"#f1f1f1", // white
 
 	[255] = 0,
 
